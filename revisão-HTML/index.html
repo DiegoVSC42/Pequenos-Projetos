@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-
 <html>
     <head>
-        <title>Quiz para programadores</title>
+        <title >Quiz para programadores</title>
         <meta name = "description" content= "Um quiz interativo para testar seus conhecimentos">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>Quiz interativo para programadores</h1>
-            <p>Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer !</p>
+            <h1 class="titulo">Quiz interativo para programadores</h1>
+            <p class="titulo">Teste seus conhecimentos em programação e veja qual pontuação você consegue fazer !</p>
         </header>
         <main>
             <!--Introdução-->
@@ -22,14 +22,14 @@
             <section>
                 <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web ?</h2>
                 <form>
-                    <input type="radio" value="Python" id = "p1a">
+                    <input type="radio" value="Python" id = "p1a" name="p1a">
                     <label for = "p1a">Python</label><br>
-                    <input type="radio" value="HTML" id = "p1a">
-                    <label for = "p1a">HTML</label><br>
-                    <input type="radio" value="Javascript" id = "p1a">
-                    <label for = "p1a">Javascript</label><br>
-                    <input type="radio" value="Ruby" id = "p1a">
-                    <label for = "p1a">Ruby</label><br>
+                    <input type="radio" value="HTML" id = "p1b" name="p1a">
+                    <label for = "p1b">HTML</label><br>
+                    <input type="radio" value="Javascript" id = "p1c" name="p1a">
+                    <label for = "p1c">Javascript</label><br>
+                    <input type="radio" value="Ruby" id = "p1d" name="p1a">
+                    <label for = "p1d">Ruby</label><br>
                 </form>
             </section>
             <!--Pergunta 2: Texto-->
@@ -73,6 +73,7 @@
             <section>
                 <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
                 <form >
+                    <label for="pergunta6">Enviar arquivo</label>
                     <input type="file" name="p6" id="pergunta6">
                 </form>
             </section>
@@ -178,8 +179,8 @@
             </section>
         </main>
         <footer>
-            <p>&copy Quiz de programadores. Todos os direitos reservados</p>
-            <p>Para conhecer mais sobre mim <a href="https://github.com/DiegoVSC42" target="_blank">clique aqui</a></p>
+            <p class="paragrafo-footer">&copy Quiz de programadores. Todos os direitos reservados</p>
+            <p class="paragrafo-footer">Para conhecer mais sobre mim <a href="https://github.com/DiegoVSC42" target="_blank">clique aqui</a></p>
         </footer>
     </body>
 </html>
