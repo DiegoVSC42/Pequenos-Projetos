@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-primaria: #4B0082; /* Indigo */
+    --cor-secundaria: #6A0DC3; /* Purple */
+    --cor-terciaria: #8A2BE2; /* Blue Violet */
+    --neutro: #2E2E2E; /* Dark Gray */
+    --preto: #0C0C0C; /* Very Dark Gray */
+    --branco: #fafafa;
+    --fonte-titulo: "Cinzel", serif; /* Clássico e elegante */
+    --fonte-texto: "Montserrat", sans-serif; /* Limpo e moderno */
+    --degrade-fantasia: linear-gradient(180deg, #1E1E78 0%, #4B0082 100%); /* Dark Blue to Indigo */
+}
+
+
+
+body {
+    background: var(--degrade-fantasia);
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    color: var(--branco);
+    background-color: var(--neutro);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    
+
+    width: 512px;
+    height: 360px;
+    padding: 32px;
+
+    border-radius: 16px;
+}
+h1{
+    text-shadow: 1px 1px .5px var(--cor-primaria);
+}
+
+.texto{
+    color: var(--neutro);
+    background-color: var(--branco);
+
+    width: 75%;
+    padding: .25rem;
+
+    border-radius: 1rem;
+    border: 2px solid var(--cor-primaria); 
+    text-align: center;
+
+    font-weight: bold;
+
+    outline-color: var(--cor-primaria);
+    
+}
+
+texto:focus {
+    outline: 2px solid blue; /* Adiciona uma linha azul de 2 pixels ao redor do input quando ele está em foco */
+}
+
+.botao{
+    color: var(--neutro);
+    background-color: var(--branco);
+
+    width: 50%;
+    padding: .5rem;
+
+    border-radius: 1rem;
+    border: 2px solid var(--cor-primaria);
+
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.texto-resposta{
+    text-shadow: 1px 1px .5px var(--cor-primaria);
+    font-weight: bold;
+}
+
+
+
+footer{
+    margin-top: 8px;
+    
+    display: flex;
+    align-items: center;
+
+    color: var(--branco);
+
+    gap: 8px;
+
+    font-weight: bold;
+}
+
+.imagem-github{
+    color: #FFFFFF;
+    width: 42px;
+    height: 42px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--branco);
+}
